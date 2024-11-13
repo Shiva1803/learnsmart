@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnSmart - Get Your Personalized Recommendations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recommendations.html" class="active">Get Recommendations</a></li>
+            </ul>
+        </nav>
+        <h1>LearnSmart</h1>
+        <p>Discover Your Perfect Learning Path</p>
+    </header>
+    <main>
+        <section id="interest-form">
+            <h2>What are you interested in learning?</h2>
+            <form id="interests-form">
+                <div class="form-group">
+                    <label for="interest1">Interest 1:</label>
+                    <input type="text" id="interest1" name="interest1" required>
+                </div>
+                <div class="form-group">
+                    <label for="interest2">Interest 2:</label>
+                    <input type="text" id="interest2" name="interest2" required>
+                </div>
+                <div class="form-group">
+                    <label for="interest3">Interest 3:</label>
+                    <input type="text" id="interest3" name="interest3" required>
+                </div>
+                <button type="submit" class="cta-button">Get Recommendations</button>
+            </form>
+        </section>
+        <section id="recommendations" class="hidden">
+            <h2>Your Personalized Course Recommendations</h2>
+            <div id="courses-list"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 LearnSmart. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
